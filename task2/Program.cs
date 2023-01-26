@@ -23,3 +23,21 @@ while (size>=3)
   }
 }
 System.Console.WriteLine($"Третья цифра вашего числа - {N}");
+
+//////// Второй вариант/////
+
+
+Console.Write("Введите любое 9-ти значное число: ");
+string num1 = Console.ReadLine();
+int size1 = Convert.ToInt32(num1.Length);
+if (size1>=3)
+{
+   int rez =num1[2];
+    System.Console.WriteLine($"Третья цифра введённого числа - {num1[2]}"); //Подскажите, пожалуйста.
+    //Если сюда вкладываю переменную rez выдаёт какие то левые цифры (даже после конвертации)
+}
+else
+{
+    Console.WriteLine("Введённое вами число не является 3-х значным! Попробуйте снова!");
+}
+
